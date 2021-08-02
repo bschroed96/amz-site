@@ -11,7 +11,8 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    background-repeat: no-repeat;}
+    background-repeat: no-repeat;
+    margin-bottom: 10px;}
 .centered {
     display: block;
     margin-left: auto;
@@ -174,11 +175,11 @@ body {
         document.body.style.backgroundImage = bkground;
         document.body.style.backgroundColor = '#1f1036'
     } else if (browserName === "Edge") {
-        // displayBase64Image(imagePlaceholder, edge);
-        var bkground = "url("+edge+")";
-        document.body.style.backgroundImage = bkground;
+        displayBase64Image(imagePlaceholder, edge);
+        // var bkground = "url("+edge+")";
+        // document.body.style.backgroundImage = bkground;
         document.body.style.backgroundColor = '#093976';
-        document.body.style.overflowY = 'scroll';
+        
     }
     else {
         // displayBase64Image(imagePlaceholder, generic);
